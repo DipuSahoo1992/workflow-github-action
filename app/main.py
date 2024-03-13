@@ -10,6 +10,8 @@ app = Flask(__name__)
 def hello():
     return '<h1> Hello Home </h1>'
 
+# commet added
+
 @app.route('/<random_string>')
 def reversed_random_string(random_string):
     return ''.join(reversed(random_string))
